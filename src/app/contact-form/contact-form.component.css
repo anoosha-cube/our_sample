@@ -1,0 +1,30 @@
+.form-control.ng-touched.ng-invalid{
+    border:2px solid red;
+}
+/* form{
+    background-color:lightBlue;
+} */
+h1{
+    background-color: beige;
+}
+.center{
+    margin:auto; 
+    width:50%;
+    margin-top:5%;
+    border:5px solid lightPink;
+    padding:10px;
+    background-color: lightBlue;
+}
+#wrapper{
+    display:flex;
+    flex-direction: row;
+}
+ #first{
+    float:left;
+    width:50%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+#second{
+    width:50%;
+} 

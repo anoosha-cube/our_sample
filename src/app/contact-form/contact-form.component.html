@@ -1,0 +1,49 @@
+<!-- <p>contact-form works!</p> -->
+<div class="col-md-5" class="center" >
+    <h1>Login page</h1>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+    <!-- <div class="form-group">
+        <label for="us">Username</label>
+        <input ngModel name="us" #us="ngModel"required
+         id="us" type="text" class="form-control"
+         minlength="3">
+         <div class="alert alert-danger" *ngIf="!us.valid && us.touched">
+            <div *ngIf="us.errors.required">Username is required</div>
+            <div *ngIf="us.errors.minlength">Username should be minimum of 3 characters</div>
+        
+        </div>
+    </div> -->
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email"
+          id="email" class="form-control"
+           ngModel name="email" required email #email="ngModel">
+           <span class="help-block" *ngIf="!email.valid && email.touched">
+            Please enter a valid email
+           </span>
+      </div>
+    <div class="form-group">
+        <label for="comment">Password</label>
+        <input type="password" class="form-control" id="ps" name="ps"
+        required ngModel #ps="ngModel">
+    </div>
+    <div id="wrapper">
+       <div id="first"><button class="btn btn-primary"
+        [disabled]="!f.valid">Submit</button></div>
+       <div id="second>">
+            <h6 >New user?Register here</h6>
+            <button class="btn btn-primary"
+             (click)="goToPage('register-form')">
+                Register</button>
+        </div>
+
+    </div>
+    </form>
+    <!-- <div class="row" *ngIf="submitted">
+        <div class="col-xs-12">
+          <h3>Your Data</h3>
+          <p>Username:{{user.username}}</p>
+          <p>password:{{user.pswd}}</p>        
+        </div>
+    </div> -->
+</div>

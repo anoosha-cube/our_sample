@@ -1,0 +1,43 @@
+<!-- <p>register-form works!</p> -->
+<div class="col-md-5" class="center" >
+    <h1>Registration page</h1>
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+    <div class="form-group">
+        <label for="fn">FirstName</label>
+        <input ngModel name="fn" #fn="ngModel"required
+         id="fn" type="text" class="form-control">
+         <div class="alert alert-danger" *ngIf="!fn.valid && fn.touched">
+        FirstName is required
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ln">LasttName</label>
+        <input ngModel name="ln" #ln="ngModel"required
+         id="ln" type="text" class="form-control">
+         <div class="alert alert-danger" *ngIf="!ln.valid && ln.touched">
+        LastName is required
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="us">Email</label>
+        <input  name="us" required email class="form-control" ngModel #us="ngModel"
+         id="us" type="email">
+         <span class="help-block" *ngIf="!us.valid && us.touched">
+            enter valid Email
+        </span>
+    
+    </div>
+    
+    <div class="form-group">
+        <label for="ps">Password</label>
+        <input type="password" class="form-control" id="ps" name="ps"
+        required ngModel #ps="ngModel">
+    </div>
+    
+    <div><button class="btn btn-primary"
+        [disabled]="!f.valid">
+        <!-- (click)="goToPage('contact-form')" -->
+        Register</button></div>
+    </form>
+    
+</div>

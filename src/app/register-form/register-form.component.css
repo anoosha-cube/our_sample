@@ -1,0 +1,14 @@
+.form-control.ng-touched.ng-invalid{
+    border:2px solid red;
+}
+h1{
+    background-color: beige;
+}
+.center{
+    margin:auto; 
+    width:60%;
+    margin-top:5%;
+    border:5px solid lightPink;
+    padding:10px;
+    background-color: lightBlue;
+}

@@ -1,0 +1,68 @@
+<router-outlet></router-outlet>
+<!-- <div class="container">
+<div class="row">
+  <div class="col-sm-10  col md-5 col-sm-offset-1 ">
+    
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+       <div id="user-data" ngModelGroup="userData"
+       #userData="ngModelGroup"> -->
+        <!--this is for just grouping  and below line starts with # is for group validation -->
+
+        <!-- <div class="form-group">
+          <label for="username">username</label>
+          <input type="text"
+            id="username" class="form-control"
+             ngModel name="username" required>
+        </div>
+        <button class="btn btn-default" type="button"
+        (click)="suggestUserName()">Suggest an username</button>
+        <div class="form-group">
+          <label for="email">Mail</label>
+          <input type="email"
+            id="email" class="form-control"
+             ngModel name="email" required email #email="ngModel">
+             <span class="help-block" *ngIf="!email.valid && email.touched">
+              Please enter a valid email
+             </span>
+        </div>
+      </div>
+      <p *ngIf="!userData.valid && userData.touched">User data is invalid</p>
+      <div class="form-group">
+        <label for="secret">Secret Questions</label>
+        <select id="secret"
+          class="form-control"
+          ngModel name="secret">
+              <option value="pet">your first pet?</option>
+              <option value="teacher">your first teacher?</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="queans"
+        rows="3"  [(ngModel)]="answer" class="form-control"></textarea>
+      </div>
+      <p>your reply:{{answer}}</p>
+      <div class="radio" *ngFor="let gender of genders">
+        <label>
+          <input type="radio"
+          name="gender" ngModel [value]="gender" required>
+          {{gender}}
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit" 
+      [disabled]="!f.valid">submit</button>
+    </form>
+  </div>
+</div>
+<hr>
+<div class="row" *ngIf="submitted">
+  <div class="col-xs-12">
+    <h3>Your Data</h3>
+    <p>Username:{{user.username}}</p>
+    <p>Mail:{{user.email}}</p>
+    <p>Gender:{{user.gender}}</p>
+    <p>Secret Question: Your first{{user.secret}}</p>
+    <p>Answer:{{user.queans}}</p>
+    
+  </div>
+</div>
+</div> -->
