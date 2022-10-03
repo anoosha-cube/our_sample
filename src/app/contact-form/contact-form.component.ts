@@ -17,17 +17,21 @@ export class ContactFormComponent implements OnInit {
 
    postId;
   submitted=false;
-   user={email:'',password:''};
+   user={username:'',password:''};
    onSubmit(){
     this.submitted=true;
-    this.user.email=this.contactForm.value.email;
+    this.user.username=this.contactForm.value.email;
     this.user.password=this.contactForm.value.ps;
-    console.log(this.user.email);
+    console.log(this.user.username);
     console.log(this.user.password);
     const headers = new HttpHeaders({'Content-Type' : 'application/json'});
-    this.http.post<any>('http://172.16.4.178:2000/login', this.user, {headers}).subscribe(data => {
+    this.http.post<any>('http://localhost:2000/listall', this.user, {headers}).subscribe(data => {
+      console.log('*********', data);
       this.postId = data.id;
-    })
+      alert("login successfully");
+      
+    });
+    this.router.navigate(['/list-page']);
 
    }
   ngOnInit() {

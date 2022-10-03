@@ -1,0 +1,25 @@
+<p>create works!</p>
+<div class="container">
+    <!-- <img src="../../assets/download.jfif" alt="" style="width:100%;"> -->
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="content" >
+    
+    <div>
+        <h5>
+            ID:{{idd}}
+        </h5>
+    </div>
+    <div class="form-group">
+<label for="title">Title</label>
+<input type="text" name="title" ngModel #title="ngModel" class="form-control">
+</div>
+<label for="textarea">Enter Description</label>
+<div>
+   
+    <textarea rows="4"
+    name="description" ngModel #description="ngModel" class="form-control">
+    </textarea>
+</div>
+<div class="cbut"><button class="btn btn-primary" 
+    >create</button></div>
+</form>
+</div>

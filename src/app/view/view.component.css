@@ -1,0 +1,14 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height: 100vh;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.content{
+    max-width: 600px;
+    width: 80%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}

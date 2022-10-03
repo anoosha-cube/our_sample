@@ -1,0 +1,32 @@
+body,html{
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+  }
+.container{
+    /* position: relative;
+    max-width: 800px;
+    margin: 0 auto; */
+    background-image: url("../../assets/img1.jfif");
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    
+}
+.content{
+    width:50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    color:ghostwhite;
+}
+.cbut{
+    margin-top: 2%;
+    margin-left: 40%;
+    
+   
+}
