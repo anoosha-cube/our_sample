@@ -22,9 +22,11 @@ export class CreateComponent implements OnInit {
     this.user.idd=this.idd;
     this.user.title=this.createForm.value.title;
     this.user.description=this.createForm.value.description;
+    // this.user.token=localStorage.getItem('token');
     console.log(this.user.title);
     console.log(this.user.idd);
     console.log(this.user.description);
+    // console.log(this.user.token);
     const headers = new HttpHeaders({'Content-Type' : 'application/json'});
     this.http.post<any>('http://localhost:2000/createpost', this.user, {headers}).subscribe(data => {
       this.postId = data.id;

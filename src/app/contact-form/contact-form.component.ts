@@ -28,6 +28,7 @@ export class ContactFormComponent implements OnInit {
     this.http.post<any>('http://localhost:2000/listall', this.user, {headers}).subscribe(data => {
       console.log('*********', data);
       this.postId = data.id;
+      // localStorage.setItem('token',data.token);
       alert("login successfully");
       
     });
